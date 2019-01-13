@@ -49,7 +49,7 @@ export default class Doc1 extends React.Component {
     }
 
     componentDidMount() {
-      queryBaseCity().then(res => {
+        queryBaseCity().then(res => {
           if (res.flag) {
               this.setState({
                     dataSource: res.data.rows.map((item, index) => {
